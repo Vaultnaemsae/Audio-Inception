@@ -1,4 +1,5 @@
-<img width="512" height="512" alt="AudioInceptionIcon" src="https://github.com/user-attachments/assets/dd364db0-cfdc-4e1b-9d15-b11d088693c5" />
+<img width="256" height="256" alt="AudioInceptionIcon" src="https://github.com/user-attachments/assets/dd364db0-cfdc-4e1b-9d15-b11d088693c5" />
+
 # Audio Inception
 
 **Multichannel audio input for plug-ins in macOS DAWs.**
