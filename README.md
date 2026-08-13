@@ -4,7 +4,7 @@
 
 **Multichannel audio input for plug-ins in macOS DAWs.**
 
-Audio Inception is a macOS AUv2 and VST3 plug-in (Apple Silicon only) that allows a DAW to access channels directly from a Core Audio input device, independently of the host's normal audio-input routing. No audio aggregation required.
+Audio Inception is a macOS AUv2 and VST3 plug-in that allows a DAW to access channels directly from a Core Audio input device, independently of the host's normal audio-input routing. No audio aggregation required.
 
 It is designed for situations where a plug-in needs access to multichannel hardware inputs that the DAW cannot conveniently—or cannot at all—route to a single plug-in instance.
 
@@ -16,7 +16,7 @@ This makes workflows possible involving:
 
 - multichannel microphones and instrument sources
 - iPhone IDAM audio injection
-- bypass environment limitations in DAWs tat are not friendly to aggregate devices - I'm looking at you, Ableton Live!
+- bypass environment limitations in DAWs that are not friendly to aggregate devices - I'm looking at you, Ableton Live!
 
 Audio Inception does **not** create a virtual audio device or modify the system's audio drivers.
 
@@ -32,7 +32,6 @@ The macOS installer allows either format, or both, to be installed.
 ## Requirements
 
 - macOS
-- Apple Silicon Mac 
 - A Core Audio-compatible input device
 - An AU/VST3 compatible DAW/plug-in host
 
