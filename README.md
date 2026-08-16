@@ -2,23 +2,33 @@
 
 # Audio Inception
 
-**Multichannel audio input for plug-ins in macOS DAWs.**
+**Direct mono or stereo audio input from a secondary Core Audio device into your macOS DAW.**
 
-Audio Inception is a macOS AUv2 and VST3 plug-in that allows a DAW to access channels directly from a Core Audio input device, independently of the host's normal audio-input routing. No audio aggregation required.
+Audio Inception is a macOS AUv2 and VST3 plug-in that allows you to bring audio directly from a selected Core Audio input device into a DAW, independently of the DAW's normal audio-input device.
 
-It is designed for situations where a plug-in needs access to multichannel hardware inputs that the DAW cannot conveniently—or cannot at all—route to a single plug-in instance.
+It is designed for situations where you want to use inputs from a device that is **not your DAW's main audio interface**, without creating an Aggregate Device or changing the DAW's audio device.
 
 ## What it does
 
-Audio Inception can acquire audio directly from a selected Core Audio device and route selected hardware input channels into its plug-in instance.
+Audio Inception opens a selected Core Audio input device directly and sends audio from **one or two selected hardware input channels** to the DAW through the Audio Inception plug-in instance.
 
-This makes workflows possible involving:
+It supports:
 
-- multichannel microphones and instrument sources
-- iPhone IDAM audio injection
-- bypass environment limitations in DAWs that are not friendly to aggregate devices - I'm looking at you, Ableton Live!
+- mono input
+- stereo input
+- mono-to-stereo duplication
+- stereo-to-mono using Left, Right, or Sum
 
-Audio Inception does **not** create a virtual audio device or modify the system's audio drivers.
+This makes workflows possible such as:
+
+- bringing a microphone or instrument into a DAW from a secondary audio interface
+- receiving audio from an iPhone or iPad over IDAM while continuing to use another device as the DAW's main audio interface
+- accessing inputs from a second Core Audio device without creating an Aggregate Device
+- working around DAW limitations that make using inputs from multiple audio devices inconvenient or impossible
+
+For example, your DAW can continue using your normal audio interface for its main input and output while an Audio Inception instance independently receives audio from another connected Core Audio device.
+
+Audio Inception does **not** host other plug-ins, create a virtual audio device, modify system audio drivers, or provide arbitrary multichannel routing.
 
 ## Plug-in formats
 
@@ -33,13 +43,13 @@ The macOS installer allows either format, or both, to be installed.
 
 - macOS
 - A Core Audio-compatible input device
-- An AU/VST3 compatible DAW/plug-in host
+- An AUv2- or VST3-compatible DAW or plug-in host
 
 ## Installation
 
-Download `Audio Inception.pkg` from the latest GitHub Release and run the installer.
+Download the Audio Inception installer from the latest GitHub Release and run it.
 
-Both plug-in formats are selected by default.
+Both plug-in formats are selected by default. You can choose to install either format individually if preferred.
 
 The installer is signed with a Developer ID certificate, notarized by Apple, and stapled for Gatekeeper verification.
 
@@ -52,5 +62,3 @@ Current release: **1.0.0**
 Audio Inception is developed by **Vaultnaemsae**.
 
 Copyright © 2026 Vaultnaemsae. All rights reserved.
-
-
